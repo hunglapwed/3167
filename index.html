@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực hành Responsive - Tông Hồng</title>
+    <style>
+        *{
+            box-sizing:border-box;
+            margin:0;
+            padding:0;
+        }
+
+        body{
+            font-family:Arial,sans-serif;
+            background-color:#f4f4f4;
+            padding:20px;
+        }
+
+        .outer-container{
+            background-color:#ff1493;
+            padding:40px;
+            max-width:1200px;
+            margin:0 auto;
+        }
+
+        .inner-container{
+            background-color:#ffb6c1;
+            max-width:600px;
+            margin:0 auto;
+            padding:20px;
+            text-align:center;
+        }
+
+        .instruction{
+            font-size:16px;
+            font-weight:bold;
+            margin-bottom:20px;
+            color:#333;
+        }
+
+        .responsive-img{
+            width:100%;
+            height:auto;
+            margin-bottom:20px;
+            display:block;
+        }
+
+        .text-content p{
+            font-size:14px;
+            line-height:1.6;
+            text-align:justify;
+            color:#000;
+        }
+
+        @media (max-width:600px){
+            .outer-container{
+                padding:10px;
+            }
+
+            .inner-container{
+                padding:15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="outer-container">
+    <div class="inner-container">
+
+        <p class="instruction">
+        To understand this example, you should open this page on a phone or a tablet.
+        </p>
+
+        <img src="https://via.placeholder.com/600x800/ff69b4/ffffff?text=Street+View"
+        alt="Cảnh con hẻm"
+        class="responsive-img">
+
+        <div class="text-content">
+            <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+            dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+            suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in
+            vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan
+            et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+            </p>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
